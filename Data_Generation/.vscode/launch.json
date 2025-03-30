@@ -1,0 +1,45 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "accelerate image classification",
+            "type": "python",
+            "request": "launch", 
+            "module": "accelerate.commands.launch",
+            "console": "integratedTerminal",
+            "env":{"CUDA_VISIBLE_DEVICES": "4,5,6,7"},
+            "justMyCode": true,
+            "args": [ "image_classification.py"]
+        },
+        {
+            "name": "Python: Finetune Script",
+            "type": "python",
+            "request": "launch",
+            "module": "accelerate.commands.launch",
+            "console": "integratedTerminal",
+            "env":{"CUDA_VISIBLE_DEVICES": "1,2"},
+            "args": [
+                "train_text_to_image_ti_lora_diffmix.py",
+                "--pretrained_model_name_or_path=runwayml/stable-diffusion-v1-5",
+                "--dataset_name=cub", // 请替换为实际的数据集名称
+                "--caption_column=text",
+                "--resolution=512", // 请替换为实际的分辨率
+                "--random_flip",
+                "--max_train_steps=35000",
+                "--num_train_epochs=10", // 请替换为实际的训练周期
+                "--checkpointing_steps=5000",
+                "--learning_rate=5e-05",
+                "--lr_scheduler=constant",
+                "--lr_warmup_steps=0",
+                "--seed=42",
+                "--rank=10",
+                "--local_files_only",
+                "--examples_per_class=-1",
+                "--train_batch_size=2",
+                "--output_dir=/data/zhicai/code/Diff-Mix/outputs/finetune_model/finetune_ti_db/sd-your_dataset_name-model-lora-rank10", // 请替换为实际的输出目录
+                "--report_to=tensorboard"
+    ]
+}
