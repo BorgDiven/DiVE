@@ -1,0 +1,330 @@
+==========
+Args:Namespace(dataset='regdb', data_path='/root/autodl-tmp/synthetic_data/8_9_reid_data/regdb_market_ca4reid/', lr=0.1, optim='sgd', arch='resnet50', resume='', test_only=False, model_path='save_model_regdb/', save_epoch=1, log_path='log_regdb/', vis_log_path='log/vis_log/', workers=4, img_w=144, img_h=384, batch_size=8, test_batch=4, margin=0.3, erasing_p=0.5, num_pos=4, trial=1, seed=0, gpu='0', mode='all', lambda_1=0.8, lambda_2=0.01)
+==========
+==> Loading data..
+Dataset regdb statistics:
+  ------------------------------
+  subset   | # ids | # images
+  ------------------------------
+  visible  |  1217 |    23571
+  thermal  |  1217 |    17047
+  ------------------------------
+  query    |   206 |     2060
+  gallery  |   206 |     2060
+  ------------------------------
+Data Loading Time:	 94.413
+==> Building model..
+==> Start Training...
+==> Preparing Data Loader...
+0
+[12848 12854 12857 ...  1050  1050  1059]
+[8842 8849 8847 ... 1057 1059 1055]
+Epoch: [0][0/736] Loss:11.354 iLoss:7.105 TLoss:1.699 CLoss:2.546 OLoss:0.004 
+Epoch: [0][50/736] Loss:8.300 iLoss:7.086 TLoss:0.454 CLoss:0.757 OLoss:0.003 
+Epoch: [0][100/736] Loss:8.105 iLoss:7.020 TLoss:0.389 CLoss:0.694 OLoss:0.003 
+Epoch: [0][150/736] Loss:8.057 iLoss:7.018 TLoss:0.364 CLoss:0.673 OLoss:0.002 
+Epoch: [0][200/736] Loss:8.007 iLoss:6.983 TLoss:0.354 CLoss:0.668 OLoss:0.002 
+Epoch: [0][250/736] Loss:7.868 iLoss:6.860 TLoss:0.343 CLoss:0.663 OLoss:0.002 
+Epoch: [0][300/736] Loss:7.643 iLoss:6.640 TLoss:0.338 CLoss:0.664 OLoss:0.001 
+Epoch: [0][350/736] Loss:7.460 iLoss:6.442 TLoss:0.342 CLoss:0.675 OLoss:0.001 
+Epoch: [0][400/736] Loss:8.075 iLoss:7.076 TLoss:0.333 CLoss:0.664 OLoss:0.001 
+Epoch: [0][450/736] Loss:7.713 iLoss:6.718 TLoss:0.329 CLoss:0.664 OLoss:0.001 
+Epoch: [0][500/736] Loss:7.515 iLoss:6.527 TLoss:0.328 CLoss:0.658 OLoss:0.001 
+Epoch: [0][550/736] Loss:6.953 iLoss:5.946 TLoss:0.333 CLoss:0.672 OLoss:0.001 
+Epoch: [0][600/736] Loss:7.208 iLoss:6.212 TLoss:0.333 CLoss:0.662 OLoss:0.001 
+Epoch: [0][650/736] Loss:7.363 iLoss:6.351 TLoss:0.336 CLoss:0.675 OLoss:0.001 
+Epoch: [0][700/736] Loss:7.421 iLoss:6.414 TLoss:0.336 CLoss:0.669 OLoss:0.001 
+==> Preparing Data Loader...
+1
+[5930 5926 5922 ... 4587 4597 4589]
+[3982 3990 3988 ... 3338 3339 3336]
+Epoch: [1][0/736] Loss:7.634 iLoss:6.623 TLoss:0.333 CLoss:0.677 OLoss:0.001 
+Epoch: [1][50/736] Loss:7.509 iLoss:6.496 TLoss:0.333 CLoss:0.679 OLoss:0.001 
+Epoch: [1][100/736] Loss:7.432 iLoss:6.418 TLoss:0.333 CLoss:0.680 OLoss:0.001 
+Epoch: [1][150/736] Loss:6.849 iLoss:5.838 TLoss:0.332 CLoss:0.678 OLoss:0.001 
+Epoch: [1][200/736] Loss:7.251 iLoss:6.231 TLoss:0.334 CLoss:0.685 OLoss:0.001 
+Epoch: [1][250/736] Loss:7.571 iLoss:6.546 TLoss:0.337 CLoss:0.687 OLoss:0.001 
+Epoch: [1][300/736] Loss:6.502 iLoss:5.459 TLoss:0.341 CLoss:0.702 OLoss:0.001 
+Epoch: [1][350/736] Loss:6.857 iLoss:5.810 TLoss:0.343 CLoss:0.704 OLoss:0.001 
+Epoch: [1][400/736] Loss:6.870 iLoss:5.838 TLoss:0.337 CLoss:0.694 OLoss:0.001 
+Epoch: [1][450/736] Loss:6.399 iLoss:5.344 TLoss:0.341 CLoss:0.714 OLoss:0.001 
+Epoch: [1][500/736] Loss:6.536 iLoss:5.490 TLoss:0.338 CLoss:0.707 OLoss:0.001 
+Epoch: [1][550/736] Loss:5.915 iLoss:4.851 TLoss:0.340 CLoss:0.723 OLoss:0.001 
+Epoch: [1][600/736] Loss:5.339 iLoss:4.287 TLoss:0.335 CLoss:0.717 OLoss:0.001 
+Epoch: [1][650/736] Loss:6.657 iLoss:5.606 TLoss:0.338 CLoss:0.711 OLoss:0.001 
+Epoch: [1][700/736] Loss:5.322 iLoss:4.280 TLoss:0.333 CLoss:0.708 OLoss:0.001 
+Test Epoch: 1
+Extracting Gallery Feature...
+Extracting Time:	 5.506
+Extracting Query Feature...
+Extracting Time:	 5.176
+Evaluation Time:	 16.088
+POOL:   Rank-1: 12.91% | Rank-5: 23.54% | Rank-10: 30.44%| Rank-20: 38.30%| mAP: 12.65%| mINP: 6.77%
+POOL:   Rank-1: 17.91% | Rank-5: 28.20% | Rank-10: 34.47%| Rank-20: 44.13%| mAP: 18.49%| mINP: 12.38%
+POOL:   Rank-1: 19.32% | Rank-5: 27.43% | Rank-10: 33.69%| Rank-20: 41.31%| mAP: 19.90%| mINP: 13.88%
+Best Epoch [1]
+==> Preparing Data Loader...
+2
+[ 9297  9299  9305 ... 23040 23044 23045]
+[ 6215  6221  6222 ... 16574 16567 16567]
+Epoch: [2][0/736] Loss:5.690 iLoss:4.612 TLoss:0.342 CLoss:0.736 OLoss:0.001 
+Epoch: [2][50/736] Loss:4.709 iLoss:3.631 TLoss:0.339 CLoss:0.738 OLoss:0.001 
+Epoch: [2][100/736] Loss:5.942 iLoss:4.865 TLoss:0.341 CLoss:0.735 OLoss:0.001 
+Epoch: [2][150/736] Loss:3.734 iLoss:2.652 TLoss:0.338 CLoss:0.743 OLoss:0.001 
+Epoch: [2][200/736] Loss:3.237 iLoss:2.143 TLoss:0.336 CLoss:0.757 OLoss:0.001 
+Epoch: [2][250/736] Loss:4.229 iLoss:3.153 TLoss:0.334 CLoss:0.741 OLoss:0.001 
+Epoch: [2][300/736] Loss:3.591 iLoss:2.509 TLoss:0.334 CLoss:0.748 OLoss:0.001 
+Epoch: [2][350/736] Loss:4.566 iLoss:3.474 TLoss:0.333 CLoss:0.758 OLoss:0.001 
+Epoch: [2][400/736] Loss:3.984 iLoss:2.904 TLoss:0.333 CLoss:0.746 OLoss:0.001 
+Epoch: [2][450/736] Loss:4.379 iLoss:3.283 TLoss:0.333 CLoss:0.762 OLoss:0.001 
+Epoch: [2][500/736] Loss:3.264 iLoss:2.173 TLoss:0.329 CLoss:0.761 OLoss:0.001 
+Epoch: [2][550/736] Loss:3.383 iLoss:2.303 TLoss:0.328 CLoss:0.751 OLoss:0.001 
+Epoch: [2][600/736] Loss:3.592 iLoss:2.493 TLoss:0.333 CLoss:0.765 OLoss:0.001 
+Epoch: [2][650/736] Loss:3.489 iLoss:2.377 TLoss:0.333 CLoss:0.779 OLoss:0.001 
+Epoch: [2][700/736] Loss:3.186 iLoss:2.081 TLoss:0.331 CLoss:0.773 OLoss:0.001 
+Test Epoch: 2
+Extracting Gallery Feature...
+Extracting Time:	 5.199
+Extracting Query Feature...
+Extracting Time:	 5.124
+Evaluation Time:	 15.920
+POOL:   Rank-1: 25.00% | Rank-5: 36.50% | Rank-10: 45.19%| Rank-20: 54.90%| mAP: 23.02%| mINP: 13.83%
+POOL:   Rank-1: 31.31% | Rank-5: 42.72% | Rank-10: 51.36%| Rank-20: 60.05%| mAP: 29.56%| mINP: 19.17%
+POOL:   Rank-1: 31.50% | Rank-5: 42.96% | Rank-10: 50.39%| Rank-20: 61.70%| mAP: 30.39%| mINP: 20.38%
+Best Epoch [2]
+==> Preparing Data Loader...
+3
+[17318 17322 17320 ...  2034  2036  2033]
+[11871 11871 11864 ...  2036  2032  2036]
+Epoch: [3][0/736] Loss:3.324 iLoss:2.241 TLoss:0.324 CLoss:0.759 OLoss:0.001 
+Epoch: [3][50/736] Loss:4.334 iLoss:3.218 TLoss:0.333 CLoss:0.783 OLoss:0.001 
+Epoch: [3][100/736] Loss:2.744 iLoss:1.661 TLoss:0.325 CLoss:0.758 OLoss:0.001 
+Epoch: [3][150/736] Loss:3.944 iLoss:2.847 TLoss:0.329 CLoss:0.768 OLoss:0.001 
+Epoch: [3][200/736] Loss:2.610 iLoss:1.523 TLoss:0.325 CLoss:0.761 OLoss:0.001 
+Epoch: [3][250/736] Loss:4.163 iLoss:3.084 TLoss:0.324 CLoss:0.754 OLoss:0.001 
+Epoch: [3][300/736] Loss:3.245 iLoss:2.151 TLoss:0.327 CLoss:0.766 OLoss:0.001 
+Epoch: [3][350/736] Loss:2.721 iLoss:1.619 TLoss:0.324 CLoss:0.777 OLoss:0.001 
+Epoch: [3][400/736] Loss:1.992 iLoss:0.885 TLoss:0.328 CLoss:0.779 OLoss:0.001 
+Epoch: [3][450/736] Loss:2.664 iLoss:1.565 TLoss:0.328 CLoss:0.770 OLoss:0.001 
+Epoch: [3][500/736] Loss:2.382 iLoss:1.304 TLoss:0.321 CLoss:0.756 OLoss:0.001 
+Epoch: [3][550/736] Loss:1.990 iLoss:0.909 TLoss:0.321 CLoss:0.760 OLoss:0.001 
+Epoch: [3][600/736] Loss:1.992 iLoss:0.898 TLoss:0.322 CLoss:0.771 OLoss:0.001 
+Epoch: [3][650/736] Loss:1.669 iLoss:0.579 TLoss:0.323 CLoss:0.766 OLoss:0.001 
+Epoch: [3][700/736] Loss:2.425 iLoss:1.339 TLoss:0.320 CLoss:0.765 OLoss:0.001 
+Test Epoch: 3
+Extracting Gallery Feature...
+Extracting Time:	 5.329
+Extracting Query Feature...
+Extracting Time:	 5.352
+Evaluation Time:	 15.900
+POOL:   Rank-1: 30.73% | Rank-5: 42.82% | Rank-10: 51.80%| Rank-20: 61.55%| mAP: 27.28%| mINP: 15.69%
+POOL:   Rank-1: 36.70% | Rank-5: 50.49% | Rank-10: 58.50%| Rank-20: 66.84%| mAP: 35.12%| mINP: 23.19%
+POOL:   Rank-1: 36.50% | Rank-5: 48.98% | Rank-10: 56.46%| Rank-20: 65.83%| mAP: 35.16%| mINP: 24.11%
+Best Epoch [3]
+==> Preparing Data Loader...
+4
+[14356 14353 14348 ...  1853  1857  1856]
+[9727 9737 9741 ... 1858 1859 1859]
+Epoch: [4][0/736] Loss:2.523 iLoss:1.420 TLoss:0.326 CLoss:0.776 OLoss:0.001 
+Epoch: [4][50/736] Loss:2.226 iLoss:1.112 TLoss:0.324 CLoss:0.789 OLoss:0.001 
+Epoch: [4][100/736] Loss:2.840 iLoss:1.712 TLoss:0.330 CLoss:0.797 OLoss:0.001 
+Epoch: [4][150/736] Loss:2.049 iLoss:0.945 TLoss:0.324 CLoss:0.780 OLoss:0.001 
+Epoch: [4][200/736] Loss:1.988 iLoss:0.888 TLoss:0.321 CLoss:0.778 OLoss:0.001 
+Epoch: [4][250/736] Loss:2.313 iLoss:1.213 TLoss:0.327 CLoss:0.773 OLoss:0.001 
+Epoch: [4][300/736] Loss:3.092 iLoss:1.990 TLoss:0.328 CLoss:0.774 OLoss:0.001 
+Epoch: [4][350/736] Loss:1.934 iLoss:0.826 TLoss:0.323 CLoss:0.784 OLoss:0.001 
+Epoch: [4][400/736] Loss:1.915 iLoss:0.802 TLoss:0.323 CLoss:0.790 OLoss:0.001 
+Epoch: [4][450/736] Loss:2.065 iLoss:0.962 TLoss:0.324 CLoss:0.779 OLoss:0.001 
+Epoch: [4][500/736] Loss:1.980 iLoss:0.886 TLoss:0.322 CLoss:0.771 OLoss:0.001 
+Epoch: [4][550/736] Loss:1.496 iLoss:0.404 TLoss:0.318 CLoss:0.773 OLoss:0.001 
+Epoch: [4][600/736] Loss:2.306 iLoss:1.210 TLoss:0.321 CLoss:0.775 OLoss:0.001 
+Epoch: [4][650/736] Loss:2.329 iLoss:1.213 TLoss:0.325 CLoss:0.791 OLoss:0.001 
+Epoch: [4][700/736] Loss:2.000 iLoss:0.898 TLoss:0.324 CLoss:0.778 OLoss:0.001 
+Test Epoch: 4
+Extracting Gallery Feature...
+Extracting Time:	 5.349
+Extracting Query Feature...
+Extracting Time:	 5.205
+Evaluation Time:	 16.169
+POOL:   Rank-1: 38.83% | Rank-5: 53.01% | Rank-10: 60.53%| Rank-20: 69.42%| mAP: 33.46%| mINP: 19.93%
+POOL:   Rank-1: 43.59% | Rank-5: 57.96% | Rank-10: 65.19%| Rank-20: 73.64%| mAP: 39.00%| mINP: 25.49%
+POOL:   Rank-1: 42.04% | Rank-5: 57.43% | Rank-10: 64.32%| Rank-20: 71.89%| mAP: 38.21%| mINP: 24.86%
+Best Epoch [4]
+==> Preparing Data Loader...
+5
+[23092 23095 23086 ...  6614  6617  6617]
+[16611 16619 16614 ...  4337  4342  4334]
+Epoch: [5][0/736] Loss:2.160 iLoss:1.057 TLoss:0.321 CLoss:0.781 OLoss:0.001 
+Epoch: [5][50/736] Loss:1.830 iLoss:0.711 TLoss:0.327 CLoss:0.792 OLoss:0.001 
+Epoch: [5][100/736] Loss:1.757 iLoss:0.666 TLoss:0.321 CLoss:0.769 OLoss:0.001 
+Epoch: [5][150/736] Loss:1.681 iLoss:0.593 TLoss:0.318 CLoss:0.770 OLoss:0.001 
+Epoch: [5][200/736] Loss:1.499 iLoss:0.400 TLoss:0.320 CLoss:0.779 OLoss:0.001 
+Epoch: [5][250/736] Loss:1.897 iLoss:0.793 TLoss:0.321 CLoss:0.783 OLoss:0.001 
+Epoch: [5][300/736] Loss:2.347 iLoss:1.255 TLoss:0.317 CLoss:0.774 OLoss:0.001 
+Epoch: [5][350/736] Loss:2.228 iLoss:1.123 TLoss:0.321 CLoss:0.783 OLoss:0.001 
+Epoch: [5][400/736] Loss:1.692 iLoss:0.586 TLoss:0.321 CLoss:0.785 OLoss:0.001 
+Epoch: [5][450/736] Loss:1.607 iLoss:0.507 TLoss:0.321 CLoss:0.779 OLoss:0.001 
+Epoch: [5][500/736] Loss:1.731 iLoss:0.647 TLoss:0.316 CLoss:0.767 OLoss:0.001 
+Epoch: [5][550/736] Loss:1.817 iLoss:0.718 TLoss:0.319 CLoss:0.780 OLoss:0.001 
+Epoch: [5][600/736] Loss:1.908 iLoss:0.817 TLoss:0.315 CLoss:0.776 OLoss:0.001 
+Epoch: [5][650/736] Loss:1.975 iLoss:0.881 TLoss:0.319 CLoss:0.774 OLoss:0.001 
+Epoch: [5][700/736] Loss:1.714 iLoss:0.622 TLoss:0.318 CLoss:0.773 OLoss:0.001 
+Test Epoch: 5
+Extracting Gallery Feature...
+Extracting Time:	 5.328
+Extracting Query Feature...
+Extracting Time:	 5.345
+Evaluation Time:	 16.178
+POOL:   Rank-1: 31.50% | Rank-5: 42.72% | Rank-10: 49.13%| Rank-20: 56.02%| mAP: 28.35%| mINP: 18.17%
+POOL:   Rank-1: 38.59% | Rank-5: 51.12% | Rank-10: 58.16%| Rank-20: 66.07%| mAP: 37.18%| mINP: 26.54%
+POOL:   Rank-1: 38.59% | Rank-5: 49.61% | Rank-10: 56.17%| Rank-20: 64.61%| mAP: 36.51%| mINP: 26.22%
+Best Epoch [4]
+==> Preparing Data Loader...
+6
+[21127 21118 21129 ...  2182  2188  2186]
+[14974 14978 14968 ...  2105  2110  2111]
+Epoch: [6][0/736] Loss:1.711 iLoss:0.618 TLoss:0.320 CLoss:0.773 OLoss:0.001 
+Epoch: [6][50/736] Loss:1.711 iLoss:0.623 TLoss:0.316 CLoss:0.771 OLoss:0.000 
+Epoch: [6][100/736] Loss:1.589 iLoss:0.471 TLoss:0.323 CLoss:0.793 OLoss:0.001 
+Epoch: [6][150/736] Loss:1.729 iLoss:0.631 TLoss:0.320 CLoss:0.777 OLoss:0.001 
+Epoch: [6][200/736] Loss:1.812 iLoss:0.700 TLoss:0.320 CLoss:0.791 OLoss:0.001 
+Epoch: [6][250/736] Loss:1.434 iLoss:0.351 TLoss:0.315 CLoss:0.768 OLoss:0.001 
+Epoch: [6][300/736] Loss:1.993 iLoss:0.897 TLoss:0.316 CLoss:0.779 OLoss:0.001 
+Epoch: [6][350/736] Loss:1.709 iLoss:0.607 TLoss:0.315 CLoss:0.787 OLoss:0.001 
+Epoch: [6][400/736] Loss:1.634 iLoss:0.553 TLoss:0.315 CLoss:0.765 OLoss:0.000 
+Epoch: [6][450/736] Loss:1.916 iLoss:0.822 TLoss:0.320 CLoss:0.773 OLoss:0.001 
+Epoch: [6][500/736] Loss:1.675 iLoss:0.580 TLoss:0.318 CLoss:0.776 OLoss:0.000 
+Epoch: [6][550/736] Loss:1.948 iLoss:0.848 TLoss:0.319 CLoss:0.781 OLoss:0.001 
+Epoch: [6][600/736] Loss:2.052 iLoss:0.953 TLoss:0.319 CLoss:0.780 OLoss:0.000 
+Epoch: [6][650/736] Loss:1.554 iLoss:0.448 TLoss:0.316 CLoss:0.789 OLoss:0.001 
+Epoch: [6][700/736] Loss:1.808 iLoss:0.706 TLoss:0.320 CLoss:0.782 OLoss:0.000 
+Test Epoch: 6
+Extracting Gallery Feature...
+Extracting Time:	 5.342
+Extracting Query Feature...
+Extracting Time:	 5.220
+Evaluation Time:	 15.983
+POOL:   Rank-1: 37.62% | Rank-5: 52.43% | Rank-10: 59.47%| Rank-20: 67.86%| mAP: 35.62%| mINP: 23.53%
+POOL:   Rank-1: 45.39% | Rank-5: 58.54% | Rank-10: 65.34%| Rank-20: 73.74%| mAP: 43.20%| mINP: 31.07%
+POOL:   Rank-1: 44.42% | Rank-5: 58.25% | Rank-10: 64.13%| Rank-20: 72.14%| mAP: 42.36%| mINP: 30.64%
+Best Epoch [6]
+==> Preparing Data Loader...
+7
+[15183 15182 15181 ... 10017 10013 10015]
+[10259 10255 10250 ...  6828  6827  6840]
+Epoch: [7][0/736] Loss:1.979 iLoss:0.876 TLoss:0.318 CLoss:0.785 OLoss:0.001 
+Epoch: [7][50/736] Loss:1.591 iLoss:0.506 TLoss:0.314 CLoss:0.770 OLoss:0.001 
+Epoch: [7][100/736] Loss:1.510 iLoss:0.415 TLoss:0.318 CLoss:0.776 OLoss:0.001 
+Epoch: [7][150/736] Loss:1.960 iLoss:0.841 TLoss:0.320 CLoss:0.798 OLoss:0.001 
+Epoch: [7][200/736] Loss:2.118 iLoss:1.024 TLoss:0.320 CLoss:0.773 OLoss:0.001 
+Epoch: [7][250/736] Loss:2.120 iLoss:1.024 TLoss:0.319 CLoss:0.777 OLoss:0.001 
+Epoch: [7][300/736] Loss:1.903 iLoss:0.797 TLoss:0.317 CLoss:0.788 OLoss:0.001 
+Epoch: [7][350/736] Loss:2.207 iLoss:1.077 TLoss:0.323 CLoss:0.806 OLoss:0.001 
+Epoch: [7][400/736] Loss:1.643 iLoss:0.537 TLoss:0.321 CLoss:0.785 OLoss:0.001 
+Epoch: [7][450/736] Loss:2.285 iLoss:1.178 TLoss:0.321 CLoss:0.786 OLoss:0.001 
+Epoch: [7][500/736] Loss:1.940 iLoss:0.836 TLoss:0.319 CLoss:0.784 OLoss:0.001 
+Epoch: [7][550/736] Loss:1.449 iLoss:0.349 TLoss:0.315 CLoss:0.784 OLoss:0.001 
+Epoch: [7][600/736] Loss:1.380 iLoss:0.273 TLoss:0.318 CLoss:0.789 OLoss:0.000 
+Epoch: [7][650/736] Loss:1.767 iLoss:0.666 TLoss:0.318 CLoss:0.782 OLoss:0.000 
+Epoch: [7][700/736] Loss:2.052 iLoss:0.937 TLoss:0.321 CLoss:0.794 OLoss:0.001 
+Test Epoch: 7
+Extracting Gallery Feature...
+Extracting Time:	 5.265
+Extracting Query Feature...
+Extracting Time:	 5.215
+Evaluation Time:	 16.630
+POOL:   Rank-1: 46.70% | Rank-5: 61.31% | Rank-10: 68.59%| Rank-20: 75.73%| mAP: 40.29%| mINP: 25.91%
+POOL:   Rank-1: 52.14% | Rank-5: 66.26% | Rank-10: 73.35%| Rank-20: 81.70%| mAP: 46.66%| mINP: 32.25%
+POOL:   Rank-1: 51.17% | Rank-5: 64.22% | Rank-10: 72.91%| Rank-20: 81.50%| mAP: 46.13%| mINP: 32.31%
+Best Epoch [7]
+==> Preparing Data Loader...
+8
+[14996 15014 15012 ... 22448 22448 22444]
+[10124 10119 10125 ... 16027 16027 16016]
+Epoch: [8][0/736] Loss:1.721 iLoss:0.607 TLoss:0.321 CLoss:0.793 OLoss:0.001 
+Epoch: [8][50/736] Loss:1.582 iLoss:0.485 TLoss:0.315 CLoss:0.781 OLoss:0.000 
+Epoch: [8][100/736] Loss:1.642 iLoss:0.528 TLoss:0.319 CLoss:0.794 OLoss:0.001 
+Epoch: [8][150/736] Loss:1.932 iLoss:0.806 TLoss:0.322 CLoss:0.803 OLoss:0.000 
+Epoch: [8][200/736] Loss:2.015 iLoss:0.911 TLoss:0.319 CLoss:0.784 OLoss:0.000 
+Epoch: [8][250/736] Loss:1.768 iLoss:0.678 TLoss:0.313 CLoss:0.777 OLoss:0.000 
+Epoch: [8][300/736] Loss:2.349 iLoss:1.217 TLoss:0.327 CLoss:0.805 OLoss:0.000 
+Epoch: [8][350/736] Loss:1.866 iLoss:0.743 TLoss:0.323 CLoss:0.799 OLoss:0.000 
+Epoch: [8][400/736] Loss:2.053 iLoss:0.936 TLoss:0.320 CLoss:0.796 OLoss:0.000 
+Epoch: [8][450/736] Loss:1.565 iLoss:0.460 TLoss:0.317 CLoss:0.787 OLoss:0.001 
+Epoch: [8][500/736] Loss:1.968 iLoss:0.873 TLoss:0.315 CLoss:0.780 OLoss:0.001 
+Epoch: [8][550/736] Loss:1.512 iLoss:0.414 TLoss:0.315 CLoss:0.782 OLoss:0.000 
+Epoch: [8][600/736] Loss:1.554 iLoss:0.454 TLoss:0.316 CLoss:0.783 OLoss:0.000 
+Epoch: [8][650/736] Loss:1.619 iLoss:0.505 TLoss:0.320 CLoss:0.793 OLoss:0.000 
+Epoch: [8][700/736] Loss:1.680 iLoss:0.578 TLoss:0.318 CLoss:0.784 OLoss:0.000 
+Test Epoch: 8
+Extracting Gallery Feature...
+Extracting Time:	 5.343
+Extracting Query Feature...
+Extracting Time:	 5.460
+Evaluation Time:	 16.154
+POOL:   Rank-1: 41.55% | Rank-5: 54.85% | Rank-10: 61.99%| Rank-20: 70.05%| mAP: 37.00%| mINP: 23.16%
+POOL:   Rank-1: 53.79% | Rank-5: 66.50% | Rank-10: 73.16%| Rank-20: 80.63%| mAP: 48.20%| mINP: 33.57%
+POOL:   Rank-1: 51.02% | Rank-5: 65.10% | Rank-10: 72.04%| Rank-20: 79.37%| mAP: 46.90%| mINP: 32.71%
+Best Epoch [7]
+==> Preparing Data Loader...
+9
+[2246 2241 2241 ... 2718 2717 2708]
+[2139 2146 2137 ... 2439 2442 2437]
+Epoch: [9][0/736] Loss:1.837 iLoss:0.724 TLoss:0.320 CLoss:0.792 OLoss:0.000 
+Epoch: [9][50/736] Loss:1.521 iLoss:0.429 TLoss:0.315 CLoss:0.777 OLoss:0.000 
+Epoch: [9][100/736] Loss:1.687 iLoss:0.573 TLoss:0.322 CLoss:0.791 OLoss:0.000 
+Epoch: [9][150/736] Loss:1.981 iLoss:0.887 TLoss:0.317 CLoss:0.777 OLoss:0.000 
+Epoch: [9][200/736] Loss:1.920 iLoss:0.795 TLoss:0.324 CLoss:0.800 OLoss:0.000 
+Epoch: [9][250/736] Loss:1.686 iLoss:0.575 TLoss:0.322 CLoss:0.789 OLoss:0.000 
+Epoch: [9][300/736] Loss:2.351 iLoss:1.241 TLoss:0.317 CLoss:0.793 OLoss:0.000 
+Epoch: [9][350/736] Loss:1.812 iLoss:0.693 TLoss:0.321 CLoss:0.797 OLoss:0.000 
+Epoch: [9][400/736] Loss:1.972 iLoss:0.864 TLoss:0.319 CLoss:0.788 OLoss:0.000 
+Epoch: [9][450/736] Loss:1.866 iLoss:0.733 TLoss:0.321 CLoss:0.811 OLoss:0.001 
+Epoch: [9][500/736] Loss:2.051 iLoss:0.946 TLoss:0.317 CLoss:0.787 OLoss:0.000 
+Epoch: [9][550/736] Loss:1.659 iLoss:0.551 TLoss:0.318 CLoss:0.790 OLoss:0.000 
+Epoch: [9][600/736] Loss:1.911 iLoss:0.805 TLoss:0.316 CLoss:0.790 OLoss:0.001 
+Epoch: [9][650/736] Loss:1.993 iLoss:0.892 TLoss:0.316 CLoss:0.785 OLoss:0.001 
+Epoch: [9][700/736] Loss:2.054 iLoss:0.932 TLoss:0.323 CLoss:0.799 OLoss:0.000 
+Test Epoch: 9
+Extracting Gallery Feature...
+Extracting Time:	 5.290
+Extracting Query Feature...
+Extracting Time:	 5.266
+Evaluation Time:	 15.949
+POOL:   Rank-1: 46.26% | Rank-5: 61.02% | Rank-10: 68.35%| Rank-20: 75.63%| mAP: 40.02%| mINP: 25.53%
+POOL:   Rank-1: 52.23% | Rank-5: 63.83% | Rank-10: 70.83%| Rank-20: 78.54%| mAP: 46.98%| mINP: 32.73%
+POOL:   Rank-1: 51.94% | Rank-5: 63.83% | Rank-10: 71.17%| Rank-20: 78.79%| mAP: 46.65%| mINP: 32.75%
+Best Epoch [9]
+==> Preparing Data Loader...
+10
+[18981 18993 18985 ... 10020 10018 10011]
+[13335 13331 13328 ...  6832  6838  6833]
+Epoch: [10][0/736] Loss:1.563 iLoss:0.460 TLoss:0.318 CLoss:0.784 OLoss:0.000 
+Epoch: [10][50/736] Loss:1.617 iLoss:0.509 TLoss:0.317 CLoss:0.791 OLoss:0.000 
+Epoch: [10][100/736] Loss:1.788 iLoss:0.679 TLoss:0.320 CLoss:0.789 OLoss:0.000 
+Epoch: [10][150/736] Loss:1.606 iLoss:0.529 TLoss:0.309 CLoss:0.768 OLoss:0.000 
+Epoch: [10][200/736] Loss:1.572 iLoss:0.457 TLoss:0.319 CLoss:0.796 OLoss:0.000 
+Epoch: [10][250/736] Loss:1.313 iLoss:0.208 TLoss:0.317 CLoss:0.788 OLoss:0.000 
+Epoch: [10][300/736] Loss:1.466 iLoss:0.363 TLoss:0.318 CLoss:0.785 OLoss:0.000 
+Epoch: [10][350/736] Loss:1.372 iLoss:0.269 TLoss:0.316 CLoss:0.787 OLoss:0.000 
+Epoch: [10][400/736] Loss:1.853 iLoss:0.748 TLoss:0.319 CLoss:0.785 OLoss:0.000 
+Epoch: [10][450/736] Loss:1.571 iLoss:0.463 TLoss:0.320 CLoss:0.787 OLoss:0.000 
+Epoch: [10][500/736] Loss:1.491 iLoss:0.400 TLoss:0.313 CLoss:0.778 OLoss:0.000 
+Epoch: [10][550/736] Loss:1.409 iLoss:0.316 TLoss:0.310 CLoss:0.782 OLoss:0.000 
+Epoch: [10][600/736] Loss:2.207 iLoss:1.105 TLoss:0.318 CLoss:0.783 OLoss:0.000 
+Epoch: [10][650/736] Loss:1.802 iLoss:0.672 TLoss:0.321 CLoss:0.809 OLoss:0.000 
+Epoch: [10][700/736] Loss:1.296 iLoss:0.199 TLoss:0.311 CLoss:0.785 OLoss:0.000 
+Test Epoch: 10
+Extracting Gallery Feature...
+Extracting Time:	 5.226
+Extracting Query Feature...
+Extracting Time:	 5.245
+Evaluation Time:	 15.931
+POOL:   Rank-1: 55.39% | Rank-5: 70.10% | Rank-10: 76.31%| Rank-20: 83.25%| mAP: 47.01%| mINP: 30.31%
+POOL:   Rank-1: 59.17% | Rank-5: 72.67% | Rank-10: 78.79%| Rank-20: 84.47%| mAP: 51.76%| mINP: 35.62%
+POOL:   Rank-1: 59.13% | Rank-5: 72.48% | Rank-10: 78.20%| Rank-20: 83.64%| mAP: 52.04%| mINP: 36.51%
+Best Epoch [10]
+==> Preparing Data Loader...
+11
+[1714 1710 1712 ... 6507 6517 6506]
+[1719 1711 1716 ... 4282 4294 4296]

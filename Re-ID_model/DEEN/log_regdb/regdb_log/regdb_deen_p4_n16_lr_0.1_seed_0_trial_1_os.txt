@@ -1,0 +1,4 @@
+==========
+Args:Namespace(dataset='regdb', data_path='/root/autodl-tmp/synthetic_data/8_9_reid_data/regdb_market_ca4reid/', lr=0.1, optim='sgd', arch='resnet50', resume='', test_only=False, model_path='save_model_regdb/', save_epoch=20, log_path='log_regdb/', vis_log_path='log/vis_log/', workers=4, img_w=144, img_h=384, batch_size=16, test_batch=4, margin=0.3, erasing_p=0.5, num_pos=4, trial=1, seed=0, gpu='0', mode='all', lambda_1=0.8, lambda_2=0.01)
+==========
+==> Loading data..
