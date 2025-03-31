@@ -8,7 +8,7 @@ This repository contains the official implementation of our paper "Diffusion-bas
 
    ```bash
    git clone https://github.com/BorgDiven/DiVE.git
-   cd repo
+   cd DiVE
    ```
 
 2. **Create** a conda environment using the provided `environment.yml` file:
