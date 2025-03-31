@@ -53,8 +53,8 @@ This repository contains the official implementation of our paper "Diffusion-bas
    ```bash
    python c2hf_revised.py \
        --dataset sysu \
-       --base_path /root/autodl-tmp/DiVE/synthesize_data/preprocess/step1/2/sysu/sysu_market4difftraining \
-       --output_path /root/autodl-tmp/DiVE/synthesize_data/preprocess/step1/2/sysu \
+       --base_path /path/to/sysu_market \
+       --output_path /path/to/sysu_market_huggingface \
        --num_cameras 7
    ```
 
