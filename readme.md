@@ -65,6 +65,28 @@ This repository contains the official implementation of our paper "Diffusion-bas
 
 ## Data Generation
 
+1. **Download SD-1.5 model Using Hugging Face CLI**
+
+   Install the Hugging Face Hub CLI:
+
+   ```bash
+   pip install huggingface_hub
+   ```
+
+   Log in to Hugging Face:
+
+   ```bash
+   huggingface-cli login
+   ```
+   Go to https://huggingface.co/settings/tokens, generate a new personal access token, and use it when prompted by huggingface-cli login.
+
+   Download a model:
+
+   ```bash
+   huggingface-cli download stable-diffusion-v1-5/stable-diffusion-v1-5 --local-dir ./stable-diffusion-v1-5
+   Attention: add the "--local-dir-use-symlinks False" to directly download to specific path
+   ```
+
 Change directory to: cd Data_Generation
 
 1. **Finetune the SD model** (**cd Data_Generation**) 
