@@ -179,8 +179,8 @@ dependencies:
       - tinycss2==1.2.1
       - tokenizers==0.19.1
       - tomli==2.0.1
-      - torch==2.1.2+cu121
-      - torchvision==0.16.2+cu121
+      - torch==2.1.2
+      - torchvision==0.16.2
       - tornado==6.4
       - tqdm==4.66.4
       - traitlets==5.14.1
