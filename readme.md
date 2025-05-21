@@ -34,7 +34,7 @@ This repository contains the official implementation of our paper "Diffusion-bas
    Convert the Market dataset into SYSU format (Market as one camera) and add Market into the SYSU dataset:
 
    ```bash
-   python market2sysu.py \
+   python market2sysu_revised.py \
        --market_gt_bbox_dir /path/to/market_data/Market-1501-v15.09.15/gt_bbox \
        --sysu_dir /path/to/sysu_original_data \
        --max_sysu_id 533 \
@@ -150,7 +150,7 @@ Train SYSU data with DEEN method
     Run training:
 
    ```bash
-    sh train.sh
+    sh train_sysu.sh
    ```
 
 3. **Test the Re-ID model**
@@ -166,5 +166,5 @@ Train SYSU data with DEEN method
     Run testing:
 
    ```bash
-    sh test.sh
+    sh test_sysu.sh
    ```
