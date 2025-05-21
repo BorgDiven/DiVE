@@ -125,7 +125,8 @@ Change directory to: cd Data_Generation
 4. **Add the generated data into SYSU-Market data** (**cd Preprocess**) 
 
    ```bash
-   python move_synthetic_data.py -i /path/to/synthetic_data -o /path/to/synthetic_data
+   python move_synthetic_data.py -i /path/to/sysu_market_data -o /path/to/synthetic_data
+   **/path/to/sysu_market_data must refer to the SYSU dataset folder integrated by market2sysu_revised.py Don't set to a new SYSU dataset folder**
    ```
 
 
