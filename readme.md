@@ -2,6 +2,9 @@
 
 This repository contains the official implementation of our paper "Diffusion-based Synthetic Data Generation for Visible-Infrared Person Re-Identification" accepted at AAAI 2025.
 
+> ⚠️ **Important Notice**:  
+> The weight file for generating infrared images has been uploaded and you can download it from the link in **Finetune the SD model**.  
+
 ## Environment Setup
 
 1. **Clone** this repository:
