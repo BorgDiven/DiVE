@@ -3,7 +3,8 @@
 This repository contains the official implementation of our paper "Diffusion-based Synthetic Data Generation for Visible-Infrared Person Re-Identification" accepted at AAAI 2025.
 
 > ⚠️ **Important Notice**:  
-> The weight file for generating infrared images has been uploaded and you can download it from the link in section **2.Finetune the SD model**.  
+> The weight file for generating infrared images has been uploaded and you can download it from the link in section **2.Finetune the SD model**.
+> If you want to use our weight to generate images, you should replace the huggingface data's dataset_info.json with the file with same name in dir Preprocess. Thie will make sure the camera description is consistent because the c2hf_revised.py generates rendom description each time.  
 
 ## Environment Setup
 
